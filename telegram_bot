@@ -1,0 +1,57 @@
+import os
+import telebot
+
+import os
+import telebot
+import requests
+# pip install pyTelegramBotAPI
+
+
+
+BOT_TOKEN = os.environ.get('BOT_TOKEN')
+# created an api token .env file named nostr_telegram_bot.env
+
+# "After that, run the source .env command to read the environment variables from the .env file."  I used source nostr_telegram_bot.env in the correct folder.pyt
+
+#created a an api by starting a conversation with @botfather and typing #newbot
+
+# Free Code Camp says "Make sure you store the token securely. Anyone with your token access can easily manipulate your bot."  I think this means run a virtual environment
+# I saved the key to bitwarden, but it's also on my linux computer. Is this okay or should I encrypt it using an air gapped computer and PGP?
+
+bot = telebot.TeleBot(BOT_TOKEN)
+#variable assinged telebot.Telebot. I need to read the documentation to learn what this is.
+
+@bot.message_handler(commands=['start'])
+def send_welcome(message):
+    bot.reply_to(message, "Welcome to The ChangeThisToYourMeetup a meetup in cyberspace.  We are a bitcoin-only. The purpose of this Telegram channel is to create a local online bitcoin beacon in YourLocalCommunity. Visit our homepage at https://nostrsites.com/yournostrsites")
+
+@bot.message_handler(commands=['hello'])
+def send_welcome(message):
+    bot.reply_to(message, "What's up pleb?")
+
+@bot.message_handler(func=lambda msg: True)
+def echo_all(message):
+    bot.reply_to(message.chat.id, message.text)
+
+
+bot.infinity_polling()
+
+
+'''
+API_KEY = os.getenv('API_KEY')
+bot = telebot.TeleBot(API_KEY)
+
+BOT_TOKEN = os.environ.get('BOT_TOKEN')
+# created an api token .env file named nostr_telegram_bot.env
+
+# reply
+@bot.message_handler(commands=['Greet'])
+def greet(message):
+    bot.reply_to(message, "Welcome to Riverside Bitcoin in Cyberspace!")
+
+bot.polling()
+
+
+# Todo: Add a video tutorial on the README.md
+
+
