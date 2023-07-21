@@ -1,33 +1,42 @@
 import os
 import telebot
-
-import os
-import telebot
 import requests
-# pip install pyTelegramBotAPI
 
-
-
+# created an api token .env file named .env. You'll need to create your own .env file with your own key. You can get a key on Telegram by using the @botfather
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
-# created an api token .env file named nostr_telegram_bot.env
 
-# "After that, run the source .env command to read the environment variables from the .env file."  I used source nostr_telegram_bot.env in the correct folder.pyt
-
-#created a an api by starting a conversation with @botfather and typing #newbot
-
-# Free Code Camp says "Make sure you store the token securely. Anyone with your token access can easily manipulate your bot."  I think this means run a virtual environment
-# I saved the key to bitwarden, but it's also on my linux computer. Is this okay or should I encrypt it using an air gapped computer and PGP?
 
 bot = telebot.TeleBot(BOT_TOKEN)
-#variable assinged telebot.Telebot. I need to read the documentation to learn what this is.
 
+# Replace [YourMeetup] with the name of your meetup
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, "Welcome to The ChangeThisToYourMeetup a meetup in cyberspace.  We are a bitcoin-only. The purpose of this Telegram channel is to create a local online bitcoin beacon in YourLocalCommunity. Visit our homepage at https://nostrsites.com/yournostrsites")
+    bot.reply_to(message, "Welcome to The [YourMeetup] in cyberspace.  We are a bitcoin-only.  Use /help for more information")
 
+#hello_command
 @bot.message_handler(commands=['hello'])
 def send_welcome(message):
     bot.reply_to(message, "What's up pleb?")
+#help_command
+@bot.message_handler(commands=['help'])
+def send_welcome(message):
+    bot.reply_to(message, "Commands: /start /help /WhenMeetUp /nostr /website")
+
+#nostr Enter your own npub
+@bot.message_handler(commands=['nostr'])
+def send_welcome(message):
+    bot.reply_to(message, "https://snort.social/p/Enter your_pubKey_here")
+
+#WhenMeetp_command
+@bot.message_handler(commands=['WhenMeetUp'])
+def send_welcome(message):
+    bot.reply_to(message, "You can find our next meetup by clicking on our calender https://habla.news/a/article_that_shows_when_next_meetup")
+
+#website
+@bot.message_handler(commands=['WhenMeetUp'])
+def send_welcome(message):
+    bot.reply_to(message, "You can find our website on https://nosrsites.com/riversidebtc")
+    
 
 @bot.message_handler(func=lambda msg: True)
 def echo_all(message):
@@ -38,20 +47,8 @@ bot.infinity_polling()
 
 
 '''
-API_KEY = os.getenv('API_KEY')
-bot = telebot.TeleBot(API_KEY)
+Note: You will need to create your own telegram api by using @botfather.  It's easy. Just follow the directions here
 
-BOT_TOKEN = os.environ.get('BOT_TOKEN')
-# created an api token .env file named nostr_telegram_bot.env
+https://www.freecodecamp.org/news/how-to-create-a-telegram-bot-using-python/
 
-# reply
-@bot.message_handler(commands=['Greet'])
-def greet(message):
-    bot.reply_to(message, "Welcome to Riverside Bitcoin in Cyberspace!")
-
-bot.polling()
-
-
-# Todo: Add a video tutorial on the README.md
-
-
+I think there might be a way to do this using Classes, but I'm not sure how to do this.
