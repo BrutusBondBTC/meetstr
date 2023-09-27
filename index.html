@@ -1,586 +1,155 @@
-<!DOCTYPE html> 
-    
- <html lang="en"> 
-    
- 
-    
- <head> 
-    
- 
-    
- <title>Riverside Bitcoin Meetup</title> 
-    
- 
-    
- <meta charset="UTF-8"> 
-    
- 
-    
- <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    
- 
-    
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-    
- 
-    
- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> 
-    
- 
-    
- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> 
-    
- 
-    
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    
- 
-    
- <style> 
-    
- 
-    
- body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif} 
-    
- 
-    
- .w3-bar,h1,button {font-family: "Montserrat", sans-serif} 
-    
- 
-    
- .fa-anchor,.fa-coffee {font-size:200px} 
-    
- 
-    
- </style> 
-    
- 
-    
- </head> 
-    
- 
-    
- <body> 
-    
- 
-    
- 
-    
- <!-- Navbar --> 
-    
- 
-    
- <div class="w3-top"> 
-    
- 
-    
-   <div class="w3-bar w3-red w3-card w3-left-align w3-large"> 
-    
- 
-    
-     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> 
-    
- 
-    
-     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a> 
-    
- 
-    
-     <a href="https://www.nostrchat.io/channel/4d78f2f84b36d900b73db2e0fb9f0bdb36424854e5c31a23b445ba13ac22b1ce" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">NostrChat</a> 
-    
- 
-    
-     <a href="https://riversidebitcoinmeetup.substack.com/?r=2jh0a1&utm_campaign=pub-share-checklist" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Get Notified Of Our Next Event</a> 
-    
- 
-    
-   </div> 
-    
- 
-    
- 
-    
-   <!-- Navbar on small screens --> 
-    
- 
-    
-   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large"> 
-    
- 
-    
-     <a href="https://www.nostrchat.io/channel/4d78f2f84b36d900b73db2e0fb9f0bdb36424854e5c31a23b445ba13ac22b1ce" class="w3-bar-item w3-button w3-padding-large">NostrChat</a> 
-    
- 
-    
-     <a href="#" class="w3-bar-item w3-button w3-padding-large">Get Notified Of Our Next Event</a> 
-    
- 
-    
-     <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large">F.A.Q.</a> --> 
-    
- 
-    
-     <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a> --> 
-    
- 
-    
-   </div> 
-    
- 
-    
- </div> 
-    
- 
-    
- 
-    
- <!-- Header --> 
-    
- 
-    
- <header class="w3-container w3-red w3-center" style="padding:128px 16px"> 
-    
- 
-    
-   <img src="https://nostr.build/p/nb11614.png" alt="Riverside Bitcion Meetup Logo"> 
-    
- 
-    
-   <h1 class="w3-margin w3-jumbo">Riverside Bitcoin Meetup</h1> 
-    
- 
-    
-   <p class="w3-xlarge">A group focused on the decentralized alternative to central banking.</p> 
-    
- 
-    
-   <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Welcome</button> 
-    
- 
-    
- </header> 
-    
- 
-    
- 
-    
- <!-- First Grid --> 
-    
- 
-    
- <div class="w3-row-padding w3-padding-64 w3-container"> 
-    
- 
-    
-   <div class="w3-content"> 
-    
- 
-    
-     <div class="w3-twothird"> 
-    
- 
-    
-       <h1>About</h1> 
-    
- 
-    
-       <h5 class="w3-padding-32">The Riverside Bitcoin Meetup is a group focused on promoting the use of bitcoin. We want to: 
-    
- 
-    
-          
-    
- 
-    
-         <ul> 
-    
- 
-    
-           <br> 
-    
- 
-    
-           <strong>Free ourselves from fractional reserve banking</strong> 
-    
- 
-    
-           <br> 
-    
- 
-    
-           <strong>Circumvent financial censorship</strong> 
-    
- 
-    
-           <br> 
-    
- 
-    
-           <strong>Promote the use of bitcoin in the circular economy</strong> 
-    
- 
-    
-           <br> 
-    
- 
-    
-           <strong>Encourage self-custody</strong> 
-    
- 
-    
-           <br> 
-    
- 
-    
-           <strong>Secure the network by running nodes</strong> 
-    
- 
-    
-           <br> 
-    
- 
-    
-           <strong>Mine bitcoin to heat our homes and stack sats</strong> 
-    
- 
-    
-           <br> 
-    
- 
-    
- 
-    
-         </ul> 
-    
- 
-    
-         <br> 
-    
- 
-    
- 
-    
-    
-    
- 
-    
-     </div> 
-    
- 
-    
- 
-    
-     <div class="w3-third w3-center"> 
-    
- 
-    
-       <i class=" fa fa-btc w3-padding-64 w3-text-orange"></i> 
-    
- 
-    
-     </div> 
-    
- 
-    
-   </div> 
-    
- 
-    
- </div> 
-    
- 
-    
- 
-    
- <!-- Second Grid --> 
-    
- 
-    
- <div class=<i class="fa-btc w3-padding-64 w3-text-orange w3-margin-right"></i> 
-    
- 
-    
-   <div class="w3-content"> 
-    
- 
-    
-     <div class="w3-third w3-center"> 
-    
- 
-    
-       <i class="fa fa-coffee w3-padding-64 w3-text-orange w3-margin-right"></i> 
-    
- 
-    
-     </div> 
-    
- 
-    
- 
-    
-     <div class="w3-twothird"> 
-    
- 
-    
-       <h1>Coffee</h1> 
-    
- 
-    
-       <h5 class="w3-padding-32"> Actionable Bitcion Discussion.</h5> 
-    
- 
-    
- 
-    
-       <p class="w3-text-grey">Come meet us for coffee and actionable bitcoin discussion. 
-    
- 
-    
- 
-    
-         <br> 
-    
- 
-    
- 
-    
-         The meetups are listed on the <a href="https://nostr.how/en/what-is-nostr">nostr</a> chat. 
-    
- 
-    
- 
-    
-         Don't have a nostr key yet? Subscribe to the Substack to get notified of our next event. 
-    
- 
-    
-       </p> 
-    
- 
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Riverside Bitcoin Meetstr</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+    <!-- If you can read this, start your own meetup on nostr. -->
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    
+    <a href="https://primal.net/p/npub1rvrsde6r0w7unk3am48md5us4gsx536dq5qh6utedkhhemq3hxesehc89n" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Nostr</a>
+    
+    <a href="https://simplex.chat/contact#/?v=1-4&smp=smp%3A%2F%2FN_McQS3F9TGoh4ER0QstUf55kGnNSd-wXfNPZ7HukcM%3D%40smp19.simplex.im%2FYC7RUWvbmQW8fTMjewIEqliRIErhFNKy%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEARhZeI-ZZwjuLN2i95WBAKVLRW0yDcwRIiHsmQkuVVVw%253D%26srv%3Di53bbtoqhlc365k6kxzwdp5w3cdt433s7bwh3y32rcbml2vztiyyz5id.onion&data=%7B%22type%22%3A%22group%22%2C%22groupLinkId%22%3A%227ITAT5RMxq-6jA2F8Id9JQ%3D%3D%22%7D" class="w3-bar-item w3-button w3-padding-large w3-hover-white">SimpleX Group Chat</a>
+
+    <a href="https://t.me/+gShrKNuaYrk5MjMx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Telegram</a>
+    <a href="https://nodeless.io/donate/riverside-bitcoin-meetup" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Donate</a>
+    
+    <!--<a href="https://blogstack.io/naddr1qqxnzd3c8yurjdp3xymrxdp5qy28wumn8ghj7un9d3shjtnyv9kh2uewd9hsygqmqurwwsmmhhya50waf7md8y92yp4ywng9q97hz7td4a7wcydekvpsgqqqw4rsvlzyzd" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Next Meetup</a> -->
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="https://www.nostrchat.io/channel/4d78f2f84b36d900b73db2e0fb9f0bdb36424854e5c31a23b445ba13ac22b1ce" class="w3-bar-item w3-button w3-padding-large">NostrChat</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Get Notified Of Our Next Event</a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large">F.A.Q.</a> 
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a> -->
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <img src="https://cdn.nostr.build/p/nb11614.png" alt="Riverside Bitcoin Meetstr Logo">
+  <h1 class="w3-margin w3-jumbo">Riverside Bitcoin Meetstr</h1>
+  <p class="w3-xlarge">A group focused on the decentralized alternative to central banking</p>
+  <!-- <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Join Us</button> -->
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>About</h1>
+      <h5 class="w3-padding-32">Riverside Bitcoin is a group focused on promoting the use of bitcoin and freedom tech.
+        
+        <p>
+
+          The idea is for Bitcoiners to get to know each other in Cyberspace. The pleb who created this website is very bullish on nostr and learning to create a nostrchat-telegram bridge, but it's very early so if you have any questions, please see the Telegram channel. The meetups will be posted on The Telegram Group and The Orange Pill App. Nostr uses cryptography, but is not an investment. There is no token. There is no blockchain--Only private/public keypairs and relays. 
+
+          I have also decided to use the Meetup.com because most of the world has not yet used public/private key cryptography.
+
+        </p>
+        
+        The mission of this group is to create a local online beacon like Gigi describes on the website <a href="https://twentyone.world/concept ">Twenty One World</a> in Riverside, California. Then, we can meet in meat space. 
+
       
-    
- 
-    
+        
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class=" fa fa-btc w3-padding-64 w3-text-orange"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class=<i class="fa-btc w3-padding-64 w3-text-orange w3-margin-right"></i>
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-orange w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h3>Learn, Hang Out, Stack Zaps!</h3>
       
-    
- 
-    
-     </div> 
-    
- 
-    
-   </div> 
-    
- 
-    
- </div> 
-    
- 
-    
- 
-    
- <div class="w3-container w3-black w3-center w3-opacity w3-padding-64"> 
-    
- 
-    
-     <h1 class="w3-margin w3-xlarge">"The root problem with conventional currency is all the trust that's required to make it work. The central bank must be trusted not to debase the currency, but the history of fiat currencies is full of breaches of that trust." --Satoshi Nakamoto</h1> 
-    
- 
-    
- </div> 
-    
- 
-    
- 
-    
- <!-- Footer --> 
-    
- 
-    
- <footer class="w3-container w3-padding-64 w3-center w3-opacity">   
-    
- 
-    
-   <div class="w3-xlarge w3-padding-32"> 
-    
- 
-    
-     <i class="fa fa-facebook-official w3-hover-opacity"></i> 
-    
- 
-    
-     <i class="fa fa-instagram w3-hover-opacity"></i> 
-    
- 
-    
-     <i class="fa fa-snapchat w3-hover-opacity"></i> 
-    
- 
-    
-     <i class="fa fa-pinterest-p w3-hover-opacity"></i> 
-    
- 
-    
-     <i class="fa fa-twitter w3-hover-opacity"></i> 
-    
- 
-    
-     <i class="fa fa-linkedin w3-hover-opacity"></i> 
-    
- 
-    
-  </div> 
-    
- 
-    
- You won't find us on social surviellence media. 
-    
- 
-    
- <br> 
-    
- 
-    
- <a href="https://iris.to/riversidebtc" target="_blank">npub1rvrsde6r0w7unk3am48md5us4gsx536dq5qh6utedkhhemq3hxesehc89n</a> 
-    
- 
-    
- 
-    
-  <p> 
-    
- 
-    
-   <br> 
-    
- 
-    
- 
-    
-    
-    
- 
-    
-   <img src="https://nostr.build/p/nb8171.png" alt="Knut Svanholm one shot principle"> 
-    
- 
-    
-   <br> 
-    
- 
-    
-   <br>  
-    
- 
-    
-   <a href="https://highlighter.com/e/note1cw8l4jz6vvxtqacss05kvmxj9zvfjdmd7fea5kzw6m9h2vf6gevq0p8cvv">Knut Svanholm</a> 
-    
- 
-    
-   <br> 
-    
- 
-    
-   <br> 
-    
- 
-    
-   <br> 
-    
- 
-    
-   <br> 
-    
- 
-    
-   Powered by <a href="https://nostrsites.com"></a>Nostrsites.com 🧡 
-    
- 
-    
-   <br> 
-    
- 
-    
- 
-    
-   As seen on TOR: 
-    
- 
-    
-   <br> 
-    
- 
-    
- 
-    
-   http://riversidebitcoinmeetup.nc66a3ohrhj3ltcepf6whjzgwc5lbxjty54euj22dniljsyeq2dyqqyd.onion 
-    
- 
-    
- 
-    
- </p> 
-    
- 
-    
- </footer> 
-    
- 
-    
- 
-    
- <script> 
-    
- 
-    
- // Used to toggle the menu on small screens when clicking on the menu button 
-    
- 
-    
- function myFunction() { 
-    
- 
-    
-   var x = document.getElementById("navDemo"); 
-    
- 
-    
-   if (x.className.indexOf("w3-show") == -1) { 
-    
- 
-    
-     x.className += " w3-show"; 
-    
- 
-    
-   } else {  
-    
- 
-    
-     x.className = x.className.replace(" w3-show", ""); 
-    
- 
-    
-   } 
-    
- 
-    
- } 
-    
- 
-    
- </script> 
-    
- 
-    
- 
-    
- </body> 
-    
- 
-    
- </html> 
-    
- 
-   
+
+      <p class="w3-text-grey">Come hang out with us on Nostr or Telegram if you prefer.
+        
+        Then, hang out with us in meat space
+        
+        Hope to see you soon. </p>
+
+        
+
+       
+
+      <p>
+        <a href="https://highlighter.com/e/note1cw8l4jz6vvxtqacss05kvmxj9zvfjdmd7fea5kzw6m9h2vf6gevq0p8cvv"> Knut Svanholm's One Shot Principle. </a>
+        <br>
+        <br>
+
+        <img src="https://i.nostr.build/g0XQ.png" alt="One Shot Principle">
+
+
+      </p>
+
+      <!-- <h4>This is NOT about Meetups*</h4>
+      For meetups, have a look at one of these:
+
+    <a href="Https://bitcoin-only.com/meetups">bitcoin-only meetups</a> 
+            <br>
+        <a href="https://www.bitcoinerevents.com">bitcoiner events</a>
+        <a href="https://www.w3schools.com">Visit W3Schools</a> 
+            <br>
+       <a href="https://plebwalks.com/">...or take a walk</a>
+            <br>
+      <p>For more information, please see <a href="https://twentyone.world">Twenty One World</a></p>.
+     -->
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">"The root problem with conventional currency is all the trust that's required to make it work. The central bank must be trusted not to debase the currency, but the history of fiat currencies is full of breaches of that trust." --Satoshi Nakamoto</h1>
+</div>
+
+<!-- Footer -->
+<!-- <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity">https://www.theatlantic.com/technology/archive/2014/06/everything-we-know-about-facebooks-secret-mood-manipulation-experiment/373648/</i>
+    <i class="fa fa-snapchat w3-hover-opacity">https://news.yahoo.com/man-illegally-accessed-snapchat-accounts-143211785.html</i>
+    <i class="fa fa-twitter w3-hover-opacity">https://www.npr.org/2022/12/14/1142666067/elon-musk-is-using-the-twitter-files-to-discredit-foes-and-push-conspiracy-theor</i>
+    <i class="fa-solid fa-feather">https://snort.social/p/npub1rvrsde6r0w7unk3am48md5us4gsx536dq5qh6utedkhhemq3hxesehc89n</i>
+ </div> -->
+ <p>Fork Us<a href="https://github.com/your_fork" target="_blank">Github</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
